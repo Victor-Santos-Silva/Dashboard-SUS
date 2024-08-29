@@ -1,0 +1,11 @@
+
+header h1 {
+    color: white;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e0bd0;
+    padding: 50px;
+}
