@@ -9,3 +9,7 @@ header h1 {
     background-color: #1e0bd0;
     padding: 50px;
 }
+header .header-div h1 a{
+    text-decoration: none;
+    color: white;
+}

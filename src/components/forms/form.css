@@ -5,6 +5,7 @@
     width: 50%;
     margin: auto;
     background-color: #1e0bd0;
+    border-radius: 15px;
     /* Flex Box*/
     display: flex;
     flex-direction: column;
@@ -38,6 +39,7 @@
     white-space: nowrap;
     cursor: pointer;
     transition: all .3s;
+    margin-top: 30px;
   }
   
   .text:active,

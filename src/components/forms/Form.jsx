@@ -4,8 +4,8 @@ import { useState } from "react";
 const Form = () => {
     const initialForm = {
         nome: "",
-    }
-
+        cpf: ""
+    };
     const [formState, setFormState] = useState(initialForm)
 
     const handleInput = (event) => {
@@ -18,10 +18,11 @@ const Form = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formState.nome);
-
+        console.log("Nome: " + formState.nome);
+        console.log("CPF: " + formState.cpf);
         setFormState({ ...initialForm })
     }
+
     return (
         <div className="containerForm">
             <div>
@@ -39,30 +40,16 @@ const Form = () => {
                             placeholder="Insira aqui..."
                         />
 
-                        <label htmlFor="nome">Idade:</label>
+                        <label htmlFor="cpf">CPF:</label>
                         <input
                             type="text"
-                            id="nome"
-                            name="nome"
-                            value={formState.nome}
-                            onChange={handleInput}
-                            class="input"
-                            placeholder="Insira aqui..."
-
-                        />
-                        
-                        <label htmlFor="nome">CPF:</label>
-                        <input
-                            type="text"
-                            id="nome"
-                            name="nome"
-                            value={formState.nome}
+                            id="cpf"
+                            name="cpf"
+                            value={formState.cpf}
                             onChange={handleInput}
                             class="input"
                             placeholder="Insira aqui..."
                         />
-                    </div>
-                    <div className="form__group_one">
                         <button type="submit" class="text">
                             <span>
                                 <b>
