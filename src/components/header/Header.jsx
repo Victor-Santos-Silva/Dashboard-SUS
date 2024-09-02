@@ -1,13 +1,14 @@
 import "./header.css";
-
+import imagem from "../header/sus logo.png";
 const Header = () => {
     return (
         <header>
             <div className="header-div">
-                <h1><a href="#">Inicio</a></h1>
-                <h1><a href="#">Sobre</a></h1>
-                <h1><a href="#">Serviços</a></h1>
-                <h1><a href="#">Contato</a></h1>
+                <img src={imagem} alt="logo" className="logoTipo" />
+                <h1><a href="#">Home</a></h1>
+                <h1><a href="#">Cadastro</a></h1>
+                <h1><a href="#">Consultas</a></h1>
+                <h1><a href="#">Relatórios</a></h1>
             </div>
         </header>
     )
